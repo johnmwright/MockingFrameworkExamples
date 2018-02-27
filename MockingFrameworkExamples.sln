@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		..\Fakes.Contrib\README.md = ..\Fakes.Contrib\README.md
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
