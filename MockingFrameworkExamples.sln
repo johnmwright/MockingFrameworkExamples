@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeBeingTested", "CodeBeingTested\CodeBeingTested.csproj", "{E9246A2A-2D6E-4729-AABF-6A5DB225B8D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoqExamples", "MoqExamples\MoqExamples.csproj", "{871DBA61-EFAB-4A90-BD1D-AF0D22862B0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoMocksExamples", "RhinoMocksExamples\RhinoMocksExamples.csproj", "{82D3B68B-C510-410D-8BA7-09999C3C7EB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSubstituteExamples", "NSubstituteExamples\NSubstituteExamples.csproj", "{64798992-029D-4CB7-9F01-D518E81B18F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSFakesExamples", "MSFakesExamples\MSFakesExamples.csproj", "{7A54F9C3-F56D-4611-8504-87E1E876BB81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{7B01FCDB-4949-445B-907A-F4CC5E0EDE2F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		..\Fakes.Contrib\README.md = ..\Fakes.Contrib\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9246A2A-2D6E-4729-AABF-6A5DB225B8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9246A2A-2D6E-4729-AABF-6A5DB225B8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9246A2A-2D6E-4729-AABF-6A5DB225B8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9246A2A-2D6E-4729-AABF-6A5DB225B8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{871DBA61-EFAB-4A90-BD1D-AF0D22862B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871DBA61-EFAB-4A90-BD1D-AF0D22862B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871DBA61-EFAB-4A90-BD1D-AF0D22862B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871DBA61-EFAB-4A90-BD1D-AF0D22862B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D3B68B-C510-410D-8BA7-09999C3C7EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D3B68B-C510-410D-8BA7-09999C3C7EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D3B68B-C510-410D-8BA7-09999C3C7EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D3B68B-C510-410D-8BA7-09999C3C7EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64798992-029D-4CB7-9F01-D518E81B18F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64798992-029D-4CB7-9F01-D518E81B18F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64798992-029D-4CB7-9F01-D518E81B18F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64798992-029D-4CB7-9F01-D518E81B18F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A54F9C3-F56D-4611-8504-87E1E876BB81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A54F9C3-F56D-4611-8504-87E1E876BB81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A54F9C3-F56D-4611-8504-87E1E876BB81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A54F9C3-F56D-4611-8504-87E1E876BB81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {154BF7A7-CAF6-4FE0-BA02-A99674D5CD16}
+	EndGlobalSection
+EndGlobal
