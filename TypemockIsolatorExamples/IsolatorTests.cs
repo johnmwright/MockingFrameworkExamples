@@ -67,7 +67,7 @@ namespace TypemockIsolatorExamples
             // Create mocks:
             //
             var loggerMock = Isolate.Fake.Instance<ILogger>();
-
+            
             var bobMock = Isolate.Fake.Instance<IEmployee>();
             Isolate.WhenCalled(() => bobMock.IsWorkingOnDate(DateTime.MinValue)).WillReturn(true);
             Isolate.WhenCalled(() => bobMock.GetNotificationPreference()).WillReturn(LunchNotifier.NotificationType.Email);
@@ -76,7 +76,7 @@ namespace TypemockIsolatorExamples
             Isolate.WhenCalled(() => employeeServiceMock.GetEmployeesInNewYorkOffice()).WillReturn(new[] { bobMock });
 
             var notificationServiceMock = Isolate.Fake.Instance<INotificationService>(Members.MustBeSpecified);
-            Isolate.WhenCalled(() => notificationServiceMock.SendEmail(null, null));
+            Isolate.WhenCalled(() => notificationServiceMock.SendEmail(null, null)).IgnoreCall();
 
             //
             // Create instance of class I'm testing:
@@ -95,7 +95,9 @@ namespace TypemockIsolatorExamples
             Isolate.Verify.WasCalledWithArguments(() => notificationServiceMock.SendEmail(null, null))
                 .Matching(args => ((IEmployee)args[0]).Equals(bobMock));
 
-            Assert.Fail("Not working as a strict mock");
+            // Since the notification mock calls are wrapped in a try/catch where the exeception is just
+            // logged, we need to ensure the error logger was never called due to our strict mock failing.
+            Isolate.Verify.WasNotCalled(() => loggerMock.Error(null));
 
         }
 
@@ -122,7 +124,7 @@ namespace TypemockIsolatorExamples
 
             var notificationServiceMock = Isolate.Fake.Instance<INotificationService>();
             Isolate.WhenCalled(() => notificationServiceMock.SendEmail(null, null)).WillThrow(new Exception());
-            
+
             //
             // Create instance of class I'm testing:
             //
@@ -172,7 +174,7 @@ namespace TypemockIsolatorExamples
             var notificationServiceMock = Isolate.Fake.Instance<INotificationService>();
 
             Isolate.WhenCalled(() => System.DateTime.Now).WillReturn(DateTime.Parse(currentTime));
-                
+
             //
             // Create instance of class I'm testing:
             //
