@@ -105,3 +105,12 @@ Type: Unconstrained
 
 Fakes does not natively support the `AssertWasCalled` style validation, so I utilize an additional NuGet package (which I have contributed to) to provide that feature: [Fakes.Contrib](https://github.com/fvilers/Fakes.Contrib) / [NuGet](https://www.nuget.org/packages/Fakes.Contrib/)
 
+
+
+## Typemock Isolator
+Type: Unconstrained
+
+Product Info: [https://www.typemock.com/isolator](https://www.typemock.com/isolator)
+
+This product requires [a paid license](https://www.typemock.com/pricing) (there's a free 15-day trial available) to do unconstrained mocking.  Typemock was nice enought to provide
+me with a free community license so that I can work on projects like this one.

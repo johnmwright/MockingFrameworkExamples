@@ -102,6 +102,10 @@ namespace MSFakesExamples
 
             notificationServiceMock.AssertWasCalled(x => x.SendEmail(bobMock, With.Any<string>()));
 
+            // Since the notification mock calls are wrapped in a try/catch where the exeception is just
+            // logged, we need to ensure the error logger was never called due to our strict mock failing.
+            loggerMock.AssertWasNotCalled(x => x.Error(With.Any<Exception>()));
+
 
         }
 
