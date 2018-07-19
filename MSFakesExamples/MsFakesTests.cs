@@ -70,7 +70,7 @@ namespace MSFakesExamples
             //
             // Create mocks:
             //
-            var loggerMock = new StubILogger();
+            var loggerMock = new StubILogger().AsObservable();
 
             var bobMock = new StubIEmployee
             {
@@ -83,7 +83,11 @@ namespace MSFakesExamples
                 GetEmployeesInNewYorkOffice = () => new[] { bobMock }
             };
 
-            var notificationServiceMock = new StubINotificationService() { InstanceBehavior = StubBehaviors.NotImplemented}
+            var notificationServiceMock = new StubINotificationService()
+                {
+                    InstanceBehavior = StubBehaviors.NotImplemented,
+                    SendEmailIEmployeeString = (emply, tmpl) => { }
+                }
                 .AsObservable();
 
             //
