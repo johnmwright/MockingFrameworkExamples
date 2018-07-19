@@ -44,13 +44,11 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="TypeMock, Version=8.6.1.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL">
-      <HintPath>..\packages\Typemock.Isolator.8.6.1.0\lib\TypeMock.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="TypeMock, Version=8.6.2.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Typemock.Isolator.8.6.2.0\lib\TypeMock.dll</HintPath>
     </Reference>
-    <Reference Include="Typemock.ArrangeActAssert, Version=8.6.1.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL">
-      <HintPath>..\packages\Typemock.Isolator.8.6.1.0\lib\Typemock.ArrangeActAssert.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Typemock.ArrangeActAssert, Version=8.6.2.0, Culture=neutral, PublicKeyToken=3dae460033b8d8e2, processorArchitecture=MSIL">
+      <HintPath>..\packages\Typemock.Isolator.8.6.2.0\lib\Typemock.ArrangeActAssert.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

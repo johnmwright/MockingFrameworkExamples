@@ -51,7 +51,7 @@ An alternate implementation is provided for use by contrained frames in `LunchNo
 
 Each of the remaining projects attempt to implement a similar set of unit tests against the `LunchNotifier` using different Mocking Frameworks.
 
-All tests are written using [NUnit v3.9](http://nunit.org/) by way of NuGet package.
+All tests are written using [NUnit v3.10](http://nunit.org/) by way of NuGet package.
 
 In some cases, there are multiple ways to approach a test using the mocking framework, so I have provided multiple variants of the test to showcase the different approaches.
 
