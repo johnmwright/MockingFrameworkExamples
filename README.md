@@ -1,7 +1,7 @@
 Mocking Framework Examples
 =============
 
-![VSTS Build Status](https://wrightfully.visualstudio.com/bd2bb8c4-df13-47c2-843b-5fc50dd7c314/_apis/build/status/5/badge)
+![VSTS Build Status](https://wrightfully.visualstudio.com/_apis/public/build/definitions/bd2bb8c4-df13-47c2-843b-5fc50dd7c314/5/badge)
 
 
 As a companion to my blog series on [.NET Mocking Frameworks and how they work](https://wrightfully.com/intro-to-net-mocking-frameworks), this repository attempts to implement the same unit tests with mocks using each of the major mocking frameworks available for .NET.
